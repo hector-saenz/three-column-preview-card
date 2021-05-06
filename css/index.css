@@ -1,0 +1,121 @@
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+   font-size: 62.5%;
+   font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+    font-size: 1.5rem;
+    color: var(--very-light-gray);
+    background-color: var(--very-light-gray);
+}
+
+.options-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 9rem 0;
+}
+
+.options-cards__sedan,
+.options-cards__suvs,
+.options-cards__luxury {
+    padding: 5rem;
+    width: 32.5rem;
+    height: auto;
+}
+
+.options-cards__sedan {
+    border-radius: 10px 10px 0 0;
+    background-color: var(--bright-orange);
+}
+
+.options-cards__suvs {
+    background-color: var(--dark-cyan);
+}
+
+.options-cards__luxury {
+    border-radius: 0 0 10px 10px;
+    background-color: var(--very-dark-cyan);
+}
+
+.options-cards__title {
+    margin: 3rem 0;
+    font-size: 4rem;
+    font-family: 'Big Shoulders Display', sans-serif;
+    text-transform: uppercase;
+}
+
+.options-cards__description {
+    margin-bottom: 3rem;
+    line-height: 1.8;
+}
+
+.options-cards__learn-more {
+    padding: 1.5rem 3rem;
+    font-family: 'Lexend Deca';
+    font-size: 1.5rem;
+    font-weight: 400;
+    background-color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 150ms ease-in-out;
+}
+
+.options-cards__learn-more:hover {
+    color: var(--very-light-gray);
+    background-color: transparent;
+}
+
+.options-cards__sedan .options-cards__learn-more {
+    color: var(--bright-orange);
+}
+
+.options-cards__sedan .options-cards__learn-more:hover {
+    color: var(--very-light-gray);
+}
+
+.options-cards__suvs .options-cards__learn-more {
+    color: var(--dark-cyan);
+}
+
+.options-cards__suvs .options-cards__learn-more:hover {
+    color: var(--very-light-gray);
+}
+
+.options-cards__luxury .options-cards__learn-more {
+    color: var(--very-dark-cyan);
+}
+
+.options-cards__luxury .options-cards__learn-more:hover {
+    color: var(--very-light-gray);
+}
+
+@media screen and (min-width: 67.5rem) {
+    .options-cards {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .options-cards__sedan {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .options-cards__luxury {
+        border-radius: 0 10px 10px 0;
+    }
+}
