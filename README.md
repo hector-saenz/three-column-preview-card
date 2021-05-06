@@ -23,13 +23,9 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
 
-### Screenshot
-
-![](./preview.png)
-
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [three-column-preview-card.vercel.app](https://three-column-preview-card.vercel.app)
 
 ## My process
 
